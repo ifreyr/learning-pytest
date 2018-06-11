@@ -3,18 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to learning-pytest's documentation!
+Pytest 使用手册
 ===========================================
+
+
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+   doc/intro
+   doc/test-function
+   doc/fixture
+   doc/plugin
+   doc/configuration
 
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
