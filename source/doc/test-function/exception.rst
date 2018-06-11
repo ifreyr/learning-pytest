@@ -5,6 +5,8 @@
 
 .. code-block:: python
 
+   # test_raises.py
+
    def test_raises():
        with pytest.raises(TypeError) as e:
            connect('localhost', '6379')

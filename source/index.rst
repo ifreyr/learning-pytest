@@ -8,10 +8,10 @@ Pytest 使用手册
 
 
 快速入门
-==========
+======================
 
 .. toctree::
-   :caption: 快速入门
+   :caption: 第一部分 快速入门
    :hidden:
 
    doc/intro/getting-started
@@ -23,7 +23,7 @@ Pytest 使用手册
 ===========
 
 .. toctree::
-   :caption: 测试函数
+   :caption: 第二部分 测试函数
    :hidden:
 
    doc/test-function/assert
@@ -52,13 +52,21 @@ Pytest 使用手册
    参数化测试。
 
 
+固件
+===========
 
 .. toctree::
-   :maxdepth: 2
+   :caption: 第三部分 固件
+   :hidden:
 
-   doc/fixture
-   doc/plugin
-   doc/configuration
+   doc/fixture/intro
+   doc/fixture/setup-and-teardown
+
+:doc:`doc/fixture/intro`
+   固件就是函数，pytest 可以集中进行管理以便复用。
+:doc:`doc/fixture/setup-and-teardown`
+   使用固件实现预处理和后处理。
+
 
 
 
