@@ -220,3 +220,35 @@ Pytest 内置 ``monkeypatch`` 提供的函数有：
         path = os.path.expanduser('~/.conf.json')
         expected = json.load(open(path, 'r', encoding='utf-8'))
         assert expected == config
+
+
+recwarn
+------------
+
+``recwarn`` 用于捕获程序中 ``warnings`` 产生的警告。
+
+.. code-block:: python
+
+    # test_recwarn.py
+
+    def warn():
+        warnings.warn('Deprecated function', DeprecationWarning)
+
+
+    def test_warn(recwarn):
+        warn()
+        assert len(recwarn) == 1
+        w = recwarn.pop()
+        assert w.category == DeprecationWarning
+
+此外，pytest 可以使用 ``pytest.warns()`` 捕获警告：
+
+.. code-block:: python
+
+    def test_warn2():
+        with pytest.warns(None) as warnings:
+            warn()
+
+        assert len(warnings) == 1
+        w = warnings.pop()
+        assert w.category == DeprecationWarning

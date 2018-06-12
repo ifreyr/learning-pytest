@@ -87,5 +87,5 @@ Pytest 使用手册
    固件参数化，提升复用性和可维护性。
 
 :doc:`doc/fixture/builtin-fixture`
-   介绍 pytest 内置固件。
+   介绍 pytest 内置固件，避免重复造轮子。
 
