@@ -48,7 +48,7 @@
 
 ::
 
-    $ pytest -s test_parametrize.py
+    $ pytest -s tests/fixture/test_parametrize.py
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
     rootdir: F:\self-repo\learning-pytest, inifile:

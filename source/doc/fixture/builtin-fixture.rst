@@ -43,7 +43,9 @@ pytestconfig
 
 使用 ``pytestconfig``，可以很方便的读取命令行参数和配置文件。
 
-下面示例演示命令行参数解析：首先在 ``conftest.py`` 中使用函数 ``pytest_addoption`` （特定的钩子函数）：
+下面示例演示命令行参数解析：首先在 ``conftest.py`` 中使用函数 ``pytest_addoption`` （特定的 `hook function`_ ）：
+
+.. _hook function: https://docs.pytest.org/en/latest/writing_plugins.html#writing-hook-functions
 
 .. code-block:: python
 
@@ -55,7 +57,7 @@ pytestconfig
         parser.addoption('--port', action='store', default='8888',
                          help='port of db')
 
-然后就可以再测试中通过 ``pytestconfig`` 获取命令行参数：
+然后就可以在测试函数中通过 ``pytestconfig`` 获取命令行参数：
 
 .. code-block:: python
 
@@ -97,7 +99,7 @@ pytestconfig
 
 ::
 
-    $ pytest -s --host=localhost test_config.py::test_option2
+    $ pytest -s --host=localhost tests/fixture/test_config.py::test_option2
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
     rootdir: F:\self-repo\learning-pytest, inifile:

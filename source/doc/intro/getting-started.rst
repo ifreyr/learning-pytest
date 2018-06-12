@@ -34,7 +34,7 @@ Pytest 使用 Python 的 ``assert`` 进行条件判断，最简单的测试函�
 
 ::
 
-   $ pytest test1.py
+   $ pytest tests/test1.py
    ============================= test session starts =============================
    platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
    rootdir: F:\self-repo\learning-pytest, inifile:
@@ -106,5 +106,5 @@ Pytest 使用 Python 的 ``assert`` 进行条件判断，最简单的测试函�
 
    pytest 使用 ``F`` 标识测试失败（``FAILED``）。
 
-pytest 对失败的测试给出了人性化的提示。
+pytest 对失败的测试给出了非常人性化的提示。
 

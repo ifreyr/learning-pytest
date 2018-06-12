@@ -45,13 +45,13 @@ Pytest 查找测试策略
 --------------
 
 
-由于某种原因（如 ``test_func2`` 的功能还未开放完成），我们只想执行指定的测试函数。在 pytest 中有几种方式可以解决：
+由于某种原因（如 ``test_func2`` 的功能尚未开发完成），我们只想执行指定的测试函数。在 pytest 中有几种方式可以解决：
 
 第一种，显式指定函数名，通过 ``::`` 标记。
 
 ::
 
-    $ pytest test_no_mark.py::test_func1
+    $ pytest tests/test-function/test_no_mark.py::test_func1
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
     rootdir: F:\self-repo\learning-pytest, inifile:
@@ -99,7 +99,7 @@ Pytest 查找测试策略
 
 ::
 
-    $ pytest -m finished test_with_mark.py
+    $ pytest -m finished tests/test-function/test_with_mark.py
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
     rootdir: F:\self-repo\learning-pytest, inifile:

@@ -33,7 +33,7 @@
         yield
         print(' Time cost: {:.3f}s'.format(time.time() - start))
 
-注意下面的两个测试函数并没有显式使用固件：
+注意下面的两个测试函数并都没有显式使用固件：
 
 .. code-block:: python
 
@@ -44,11 +44,11 @@
     def test_2():
         time.sleep(2)
 
-执行测试可看到，固件自动执行完成计时任务：
+执行测试可看到，固件自动执行并完成计时任务：
 
 ::
 
-    $ pytest -s test_autouse.py
+    $ pytest -s tests/fixture/test_autouse.py
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
     rootdir: F:\self-repo\learning-pytest, inifile:

@@ -20,7 +20,7 @@ Pytest 使用 ``pytest.mark.xfail`` 实现预见错误功能：
 
 ::
 
-    $ pytest test_xfail.py
+    $ pytest tests/test-function/test_xfail.py
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
     rootdir: F:\self-repo\learning-pytest, inifile:

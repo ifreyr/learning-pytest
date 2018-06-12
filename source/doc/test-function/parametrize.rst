@@ -3,7 +3,7 @@
 
 当对一个测试函数进行测试时，通常会给函数传递多组参数。比如测试账号登陆，我们需要模拟各种千奇百怪的账号密码。
 
-当然，我们可以把这些参数写在测试函数内部进行遍历。需要清楚的认识到，虽然参数众多，但仍然是一个测试，当某个参数导致断言失败，测试也就终止了。
+当然，我们可以把这些参数写在测试函数内部进行遍历。不过虽然参数众多，但仍然是一个测试，当某组参数导致断言失败，测试也就终止了。
 
 通过异常捕获，我们可以保证程所有参数完整执行，但要分析测试结果就需要做不少额外的工作。
 
@@ -59,7 +59,7 @@
 
 ::
 
-    $ pytest -v test_parametrize.py::test_passwd_md5
+    $ pytest -v tests/test-function/test_parametrize.py::test_passwd_md5
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0 -- c:\anaconda3\python.exe
     cachedir: .pytest_cache
@@ -94,7 +94,7 @@
 
 ::
 
-    $ pytest -v test_parametrize.py::test_passwd_md5_id
+    $ pytest -v tests/test-function/test_parametrize.py::test_passwd_md5_id
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0 -- c:\anaconda3\python.exe
     cachedir: .pytest_cache

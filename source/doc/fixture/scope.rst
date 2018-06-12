@@ -3,12 +3,12 @@
 
 固件的作用是为了抽离出重复的工作和方便复用，为了更精细化控制固件（比如只想对数据库访问测试脚本使用自动连接关闭的固件），pytest 使用作用域来进行指定固件的使用范围。
 
-在定义固件时，通过 ``scope`` 参数声明作用域，可选项有：。
+在定义固件时，通过 ``scope`` 参数声明作用域，可选项有：
 
-- ``scope='function'``: 函数级，每个测试函数都会执行一次固件；
-- ``scope='class'``: 类级别，每个测试类执行一次，所有方法都可以使用；
-- ``scope='module'``: 模块级，每个模块执行一次，模块内函数和方法都可使用；
-- ``scope='session'``: 会话级，一次测试只执行一次，所有被找到的函数和方法都可用。
+- ``function``: 函数级，每个测试函数都会执行一次固件；
+- ``class``: 类级别，每个测试类执行一次，所有方法都可以使用；
+- ``module``: 模块级，每个模块执行一次，模块内函数和方法都可使用；
+- ``session``: 会话级，一次测试只执行一次，所有被找到的函数和方法都可用。
 
 
 .. note::
@@ -49,7 +49,7 @@
 
 ::
 
-    $ pytest --setup-show test_scope.py::test_multi_scope
+    $ pytest --setup-show tests/fixture/test_scope.py::test_multi_scope
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
     rootdir: F:\self-repo\learning-pytest, inifile:
@@ -87,7 +87,7 @@
 
 ::
 
-    $ pytest --setup-show test_scope.py::TestClassScope
+    $ pytest --setup-show tests/fixture/test_scope.py::TestClassScope
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
     rootdir: F:\self-repo\learning-pytest, inifile:

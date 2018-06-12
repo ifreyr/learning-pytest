@@ -37,7 +37,7 @@ Pytest 使用 ``yield`` 关键词将固件分为两部分，``yield`` 之前的�
 
 ::
 
-    $ pytest -s test_db.py
+    $ pytest -s tests/fixture/test_db.py
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
     rootdir: F:\self-repo\learning-pytest, inifile:
@@ -57,7 +57,7 @@ Pytest 使用 ``yield`` 关键词将固件分为两部分，``yield`` 之前的�
 
 ::
 
-    $ pytest --setup-show test_db.py
+    $ pytest --setup-show tests/fixture/test_db.py
     ============================= test session starts =============================
     platform win32 -- Python 3.6.4, pytest-3.6.1, py-1.5.2, pluggy-0.6.0
     rootdir: F:\self-repo\learning-pytest, inifile:
