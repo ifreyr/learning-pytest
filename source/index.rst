@@ -61,12 +61,28 @@ Pytest 使用手册
 
    doc/fixture/intro
    doc/fixture/setup-and-teardown
+   doc/fixture/scope
+   doc/fixture/autouse
+   doc/fixture/rename
+   doc/fixture/parametrize
+
 
 :doc:`doc/fixture/intro`
    固件就是函数，pytest 可以集中进行管理以便复用。
+
 :doc:`doc/fixture/setup-and-teardown`
    使用固件实现预处理和后处理。
 
+:doc:`doc/fixture/scope`
+   声明作用域声明固件的作用范围。
 
+:doc:`doc/fixture/autouse`
+   让固件自动执行，完成诸如计时，日志任务。
+
+:doc:`doc/fixture/rename`
+   重命名固件。
+
+:doc:`doc/fixture/parametrize`
+   固件参数化，提升复用性和可维护性。
 
 

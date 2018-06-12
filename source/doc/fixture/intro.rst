@@ -9,7 +9,7 @@ Pytest 使用 ``pytest.fixture()`` 定义固件，下面是最简单的固件，
 
 .. code-block:: python
 
-    # test_postcode
+    # test_postcode.py
 
     @pytest.fixture()
     def postcode():
