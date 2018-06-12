@@ -119,11 +119,12 @@ Pytest 使用手册
 联系
 =========
 
-本教程为 `Python Testing with pytest`_ 读书笔记，只作为交流学习。如有侵权，请联系 `本人`_ 删除。
+本教程为 `Python Testing with pytest`_ 读书笔记，只作为交流学习。如有侵权，请联系本人删除。
 
 .. _Python Testing with pytest: https://pragprog.com/book/bopytest/python-testing-with-pytest
 
-.. _本人: mrchan3030@foxmail.com
 
 如果您在阅读过程中发现有任何问题或建议，也欢迎通知本人更新，帮助更多 Pythoner。
+
+Email: mrchan3030@foxmail.com
 
