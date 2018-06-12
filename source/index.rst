@@ -6,6 +6,12 @@
 Pytest 使用手册
 ===========================================
 
+.. image:: images/pytest1.png
+
+`pytest`_: helps you write better programs。
+
+.. _pytest: https://docs.pytest.org/en/latest/index.html
+
 
 快速入门
 ======================
@@ -88,4 +94,36 @@ Pytest 使用手册
 
 :doc:`doc/fixture/builtin-fixture`
    介绍 pytest 内置固件，避免重复造轮子。
+
+插件
+============
+
+插件的介绍和使用，请移步 `Using plugins`_ 和 `Writing plugins`_ 。
+
+.. _Using plugins: https://docs.pytest.org/en/latest/plugins.html
+.. _Writing plugins: https://docs.pytest.org/en/latest/writing_plugins.html
+
+配置
+============
+
+参考官方文档 `Configuration`_ 。
+
+.. _Configuration: https://docs.pytest.org/en/latest/customize.html
+
+
+贡献者
+=========
+
+
+
+联系
+=========
+
+本教程为 `Python Testing with pytest`_ 读书笔记，只作为交流学习。如有侵权，请联系 `本人`_ 删除。
+
+.. _Python Testing with pytest: https://pragprog.com/book/bopytest/python-testing-with-pytest
+
+.. _本人: mrchan3030@foxmail.com
+
+如果您在阅读过程中发现有任何问题或建议，也欢迎通知本人更新，帮助更多 Pythoner。
 
