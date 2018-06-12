@@ -65,6 +65,7 @@ Pytest 使用手册
    doc/fixture/autouse
    doc/fixture/rename
    doc/fixture/parametrize
+   doc/fixture/builtin-fixture
 
 
 :doc:`doc/fixture/intro`
@@ -85,4 +86,6 @@ Pytest 使用手册
 :doc:`doc/fixture/parametrize`
    固件参数化，提升复用性和可维护性。
 
+:doc:`doc/fixture/builtin-fixture`
+   介绍 pytest 内置固件。
 
